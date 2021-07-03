@@ -9615,23 +9615,6 @@ send(msg.chat_id_, msg.id_,' ◉ لا تستطيع استخدام البوت \n 
 end
 return false
 end
-database:setex(bot_id.."CHENG:ID"..msg.chat_id_..""..msg.sender_user_id_,240,true)  
-local Text= [[
- ◉ ارسل الان النص
- ◉ يمكنك اضافه :
- ◉ `#rdphoto` ~⪼ تعليق الصوره
- ◉ `#username` ~⪼ اسم 
- ◉ `#msgs` ~⪼ عدد رسائل 
- ◉ `#photos` ~⪼ عدد صور 
- ◉ `#id` ~⪼ ايدي 
- ◉ `#auto` ~⪼ تفاعل 
- ◉ `#stast` ~⪼ موقع  
- ◉ `#edit` ~⪼ السحكات
- ◉ `#game` ~⪼ النقاط
-]]
-send(msg.chat_id_, msg.id_,Text)
-return false  
-end 
 if text == 'حذف الايدي' or text == 'مسح الايدي' then
 if Manager(msg) then
 if AddChannel(msg.sender_user_id_) == false then
