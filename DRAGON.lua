@@ -892,7 +892,7 @@ end
 if DevSoFi(msg) then
 local bl = 'انت الان المطور الاساسي في البوت \n سورس تريفر\n يمكنك تحكم في البوتات من الكيبورد أسفل \n[تابع جديدنا](t.me/trevor_0)'
 local keyboard = {
-{'الاحصائيات','المطور','الثانوين'},
+{'الاحصائيات','الثانوين'},
 {'فرعون','بقدونس'},
 {'قناه السورس','بوت تواصل'},
 {'اضف رد عام','حذف رد عام'},
@@ -907,8 +907,6 @@ local keyboard = {
 {'اذاعه بالتثبيت ','قائمه الكتم العام'},
 {'تغير رساله الاشتراك ','حذف رساله الاشتراك ','تغير الاشتراك'},
 {'اذاعه بالتوجيه ','اذاعه بالتوجيه خاص '},
-{'تفعيل الاشتراك الاجباري','تعطيل الاشتراك الاجباري '},
-{'الاشتراك الاجباري ','وضع قناة الاشتراك '},
 {'تفعيل البوت الخدمي ','تعطيل البوت الخدمي '},
 {'تنظيف الجروبات ','تنظيف المشتركين '},
 {'جلب نسخه الاحتياطيه'},
@@ -1129,7 +1127,8 @@ end
 
 if text == 'مبرمج تريفر' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
-local Text = [[ 
+local Text = [[
+[DEV](t.me/trrevor)
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
@@ -1154,11 +1153,11 @@ end
 if text == 'بوت تواصل' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 local Text = [[ 
-[TWL](t.me/de_vi_d25BOT)
+[Trevor](t.me/trevor1_bot)
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '  ❨ TＷＡＳＯＬ ◉  ❩ ', url="t.me/I_E_S9BOT"}}, 
+{{text = '  ❨ TＷＡＳＯＬ ◉  ❩ ', url="t.me/trevor1_bot"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -3059,7 +3058,7 @@ end
 
 if text == 'مبرمج السورس' then
 local Text = [[ 
-[Devid](t.me/trrevor)
+[TREVOR](t.me/trrevor)
 ]] 
 keyboard = {}   
 keyboard.inline_keyboard = { 
@@ -11660,7 +11659,7 @@ if text then
 list = {'مكفهر'}
 for k,v in pairs(list) do
 if string.find(text,v) ~= nil then
-send(msg.chat_id_,msg.id_, '[مرات بقدونس..💋🥀](t.me/trevor_0)') 
+send(msg.chat_id_,msg.id_, '[مرات بقدونس..💋🥀](t.me/mokfher)') 
 return false
 end
 end
