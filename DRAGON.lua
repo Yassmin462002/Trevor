@@ -147,15 +147,28 @@ _redis = load_redis()
 --------------------------------------------------------------------------------------------------------------
 print([[
  
- ////////////   ////////////   ////////////  //                  //     //////     ////////////
-    //       //      //   //          //                //    //    //    //       //
-    //       //       //  //           //              //    //      //   //       //
-    //       //      //   //            //            //    //        //  //      //
-    //       //     //    ////////////      //          //    //         //  //     //
-    //       /////////      //              //        //     //        //   /////////
-    //       //   //      //               //      //       //      //    //    //
-    //       //    //     //                ///  ///          //   //     //     //
-    //       //     //    ////////////          //////            /////      //      //
+.•♫•♬ 𝕋 ℝ 𝔼 𝕍 𝕆 ℝ •♬•♫•.   Ⓘ
+
+.•♫•♬ 𝕋 ℝ 𝔼 𝕍 𝕆 ℝ •♬•♫•.   ❤
+
+.•♫•♬ 𝕋 ℝ 𝔼 𝕍 𝕆 ℝ •♬•♫•.   Ⓛ
+
+.•♫•♬ 𝕋 ℝ 𝔼 𝕍 𝕆 ℝ •♬•♫•.   Ⓞ
+
+.•♫•♬ 𝕋 ℝ 𝔼 𝕍 𝕆 ℝ •♬•♫•.   Ⓥ
+
+.•♫•♬ 𝕋 ℝ 𝔼 𝕍 𝕆 ℝ •♬•♫•.   Ⓔ
+
+.•♫•♬ 𝕋 ℝ 𝔼 𝕍 𝕆 ℝ •♬•♫•.   ❤
+
+.•♫•♬ 𝕋 ℝ 𝔼 𝕍 𝕆 ℝ •♬•♫•.   Ⓨ
+
+.•♫•♬ 𝕋 ℝ 𝔼 𝕍 𝕆 ℝ •♬•♫•.   Ⓞ
+
+.•♫•♬ 𝕋 ℝ 𝔼 𝕍 𝕆 ℝ •♬•♫•,   Ⓤ
+
+.•♫•♬ 𝕋 ℝ 𝔼 𝕍 𝕆 ℝ •♬•♫•.   ❤
+
  
 > SOURCE › @trevor_0
 ~> DEVELOPER › @trrevor
@@ -1157,7 +1170,7 @@ local Text = [[
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '  ❨ TＷＡＳＯＬ ◉  ❩ ', url="t.me/trevor1_bot"}}, 
+{{text = '  ❨ ❤التواصل❤ ◉  ❩ ', url="t.me/trevor1_bot"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -2802,10 +2815,10 @@ end
 if text == 'مكفهر' or text == ' قلب بقدونس ' then
 local msg_id = msg.id_/2097152/0.5
 local Text = [[
- المبرمج الحبوب 
+قلب بقدونس من جوا💋❤ 
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '  𓌹مكفهر❤¹˼ 𓌺 ',url="t.me/@mokfher"}},}
+keyboard.inline_keyboard = {{{text = '  𓌹مكفهر❤¹˼ 𓌺 ',url="t.me/mokfher"}},}
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/trrevor&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
@@ -2825,6 +2838,7 @@ local Text = [[
 ◍ 'أفضل سورس وأسرعهم'
 🌖
 ◍ 'ارسل لي بريفيت لأقوم بتنصيب بوتك 🐾
+@trewvor 🐾
 ...
 ]]
 keyboard = {} 
@@ -12344,7 +12358,7 @@ local List = {
 ⚕ 𓆰 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 ★
 • 🖤 | 𝑼𝑬𝑺 : #username ‌‌‏⚚
 • 🖤 | 𝑺𝑻𝑨 : #stast 🧙🏻‍♂ ☥
-• 🖤 | 𝑰𝑫 : #id ‌‌‏♕
+• 🖤 | 𝑰?? : #id ‌‌‏♕
 • 🖤 | 𝑴𝑺𝑮 : #msgs 𓆊
 • 🖤 | 𝗖𝗛 - @trevor_0 ◉.
 ]],
@@ -13374,7 +13388,7 @@ else
 username = 'لا يوجد '
 end
 if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n🇧🇱-𝒖𝒔𝒆𝒓   '..username..'\n 🇧🇱- 𝒎𝒔𝒈𝒔  '..Msguser..'\n 🇧🇱-𝒔𝒕𝒂𝒕𝒔  '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n 🇧🇱-𝒊𝒅 '..msg.sender_user_id_..'\n🇧🇱- 𝗖𝗛 @trevor_0\n')
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n🇧🇱-𝒖𝒔𝒆𝒓   '..username..'\n 🇧🇱- ??𝒔𝒈𝒔  '..Msguser..'\n 🇧🇱-𝒔𝒕𝒂𝒕𝒔  '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n 🇧🇱-𝒊𝒅 '..msg.sender_user_id_..'\n🇧🇱- 𝗖𝗛 @trevor_0\n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
 send(msg.chat_id_, msg.id_,'[\n🇧🇱-𝒖𝒔𝒆𝒓   '..username..'\n 🇧🇱-𝒎𝒔𝒈𝒔  '..Msguser..'\n 🇧🇱-𝐒𝐭𝐚𝐬??  '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n 🇧🇱-𝒊𝒅 '..msg.sender_user_id_..'\n🇧🇱- ??𝗛  @trevor_0\n')
@@ -14177,7 +14191,7 @@ https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callb
 return false
 end
 local Teext =[[
-◁━━━━◈¹𝐓𝐑𝐄𝐕𝐎𝐑¹◈━━━━▷
+◁━━━━◈¹𝐓𝐑??𝐕𝐎𝐑¹◈━━━━▷
 ??قفل + فتح ← الامر… 
 ◉← { بالتقيد ، بالطرد ، بالكتم }
 ◁━━━━◈¹𝐓𝐑𝐄𝐕𝐎𝐑¹◈━━━━▷
@@ -15478,19 +15492,3 @@ end
 
 end -- end new msg dev.mr sofi 
 end -- end callback dev.mr sofi
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
