@@ -11627,7 +11627,7 @@ end
 end
 
 if text then 
-list =  بريفيت'}
+list =  ('بريفيت'}
 for k,v in pairs(list) do
 if string.find(text,v) ~= nil then
 send(msg.chat_id_,msg.id_, '[خدوني معاكم بريفيت ..🙄💔](t.me/trevor_0)')
