@@ -2832,7 +2832,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = '  ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/trrevor"}},
 {{text = '  ◍ M𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻𝚂 𖣌 ', url="t.me/trevor_0"}},
-{{text = '  ◍ TREVOR 𖣌 ', url="t.me/trevor_0"}},
+{{text = '  ◍ TREVOR ', url="t.me/trevor_0"}},
 }https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/trevor_0&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
@@ -14505,7 +14505,7 @@ local Teext =[[
 ◉مسح المنشئين ← المنشئين
 ◉اسم ~ ايدي + بوت غادر 
 ◉اذاعه 
-◁━━━━◈¹𝐓𝐑𝐄𝐕𝐎??¹◈━━━━▷ ┉ ┉
+◁━━━━◈¹𝐓𝐑𝐄𝐕𝐎𝐑¹◈━━━━▷ ┉ ┉
 ◉اوامر مطور الاساسي
 ◁━━━━◈¹𝐓𝐑𝐄𝐕𝐎𝐑¹◈━━━━▷
 ◉تفعيل
