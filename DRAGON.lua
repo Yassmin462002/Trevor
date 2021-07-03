@@ -15452,7 +15452,6 @@ database:sadd(bot_id..'Chek:Groups',v)
 end 
 end,nil)
 end
-
 elseif (data.ID == "UpdateMessageSendSucceeded") then
 local msg = data.message_
 local text = msg.content_.text_
@@ -15492,6 +15491,7 @@ end
 
 end -- end new msg dev.mr sofi 
 end -- end callback dev.mr sofi
+
 
 
 
