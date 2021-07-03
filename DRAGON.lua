@@ -3051,7 +3051,7 @@ local Text = [[
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '  ❨ 'T R E V O R' ◉  ❩', url="t.me/trevor1_bot"}}, 
+{{text = '  ❨ T R E V O R ◉ ❩ ', url="t.me/trevor1_bot"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -3063,7 +3063,7 @@ local Text = [[
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '  𖣘 ⁽بقدونس₎ 𖣘', url="t.me/trrevor"}}, 
+{{text = '  𖣘 ⁽بقدونس₎ 𖣘 ', url="t.me/trrevor"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
