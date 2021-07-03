@@ -3050,7 +3050,7 @@ local Text = [[
 [TWL](t.me/trevor1_bot)
 ]] 
 keyboard = {}  
-keyboard.inline_keyboard = { 
+keyboard.inline_keyboard = {
 {{text = '   {T R E V O R} ◉ ', url="t.me/trevor1_bot"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -12313,7 +12313,7 @@ local List = {
 • MSG 𖥳 #msgs  
 • STA 𖦹 #stast 
 • iD 𖥳 #id
-• ??𝗛 - @trevor_0 💞.
+• ??𝗛 - @trevor_0 ??.
 ]],
 [[
 - ᴜѕᴇʀɴᴀᴍᴇ ➣ #username .
