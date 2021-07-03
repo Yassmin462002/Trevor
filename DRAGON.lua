@@ -3051,7 +3051,7 @@ local Text = [[
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = {
-{{text = '   {T R E V O R} ◉ ', url="t.me/trevor1_bot"}}, 
+{{text = ',   {T R E V O R} ◉ ', url="t.me/trevor1_bot"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -12313,7 +12313,7 @@ local List = {
 • MSG 𖥳 #msgs  
 • STA 𖦹 #stast 
 • iD 𖥳 #id
-• ??𝗛 - @trevor_0 ??.
+• ??𝗛 - @trevor_0 💞.
 ]],
 [[
 - ᴜѕᴇʀɴᴀᴍᴇ ➣ #username .
