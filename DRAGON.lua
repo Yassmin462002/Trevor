@@ -1332,7 +1332,7 @@ echo '⚚━━━━━⚚𝐓𝐑𝐄𝐕𝐎𝐑⚚━━━━━⚚\n 🥀�
 end
 if text == 'تحديث السورس ' and DevSoFi(msg) then 
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/Ffasit/photo/main/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/Yassmin462002/Trevor/main/DRAGON.lua?token=AUWYP5LQVZUMMOQBVQ77OULBDLBRY')
 send(msg.chat_id_, msg.id_,' 🥀 تم تحديث السورس')
 dofile('DRAGON.lua')  
 end
