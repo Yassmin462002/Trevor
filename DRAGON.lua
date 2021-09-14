@@ -368,7 +368,7 @@ var = 'مطور السورس'
 elseif tonumber(user_id) == tonumber(1815928911) then
 var = 'بنوتت بقدونس'
 elseif tonumber(user_id) == tonumber(1919372798) then
-var = 'مطور السورس'
+var = 'المطور غامبول 💕'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
 elseif database:sismember(bot_id.."Dev:SoFi:2", user_id) then
@@ -1003,7 +1003,7 @@ if text == "/start" then
 if not DevSoFi(msg) then
 local Namebot = (database:get(bot_id..'Name:Bot') or 'تريفور') 
 local DRAGON_Msg = { 
-' 🔵°اهـــلا انا بـوت اسمــي '..Namebot..' ⛓│آختـصاصـي حمايـه آلمجـموعـات ..🥺\n🔵│ مـن آلسـبآم وآلتوجيه وآلتكرآر وآلخ..\n🚸╽ لتفعيل آلبوت آتبــع الشـروط 😈❕\n↫ ❬اضف البوت الى المجموعه❭\n↫ ❬ارفع البوت ادمن في المجموعه❭\n↫ ❬وارسل تفعيل وسيتم تفعيل البوت ورفع مشرفي الكروب تلقائين ❭',
+ ⸙ اهلا انـــــــآآ بوت ٱسمـي '..Namebot..' 『 اختصاصي حمايه المجموعات ..\n ➥ 』『 مٓ ـن الاسبام و التوجيه والتكرار..الخ ..\n』『لتفعيل البوت اتــبع الشــروط ✓』\n『اضف البوت الـۍ مجموعتك』↻\n『ارفع البوت مشرف فۍ المجموعه』♕ \n『اكتب تفعيل فۍ المجموعه و سيتم تفعيل البوت ورفع مشرفي المجموعه تقائي』⚫
 } 
 Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)] 
 local msg_id = msg.id_/2097152/0.5  
@@ -1505,8 +1505,8 @@ send(msg.chat_id_, msg.id_,' 🥀 اصدار سورس تريفور{ 3x☆}')
 end
 if text == '⚚━━━⚚ مطورين السورس ⚚━━━⚚' then
 local Text = [[ 
-قناه يوزرات مطورين ومطورين السورس 💕🥀.
-محتاج تنصب بوت ببلاش تواصل معان ☆⬇️.
+قناه يوزرات مطورين السورس 🥀.
+محتاج تنصب بوت ببلاش تواصل معانا ☆⬇️.
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
@@ -1520,13 +1520,13 @@ https.request("https://api.telegram.org/bot"..token..'/sendanimation?chat_id=' .
 end
 if text == 'مطورين السورس' then
 local Text = [[ 
-قناه يوزرات مطورين ومطورين السورس 💕🥀.
-محتاج تنصب بوت ببلاش تواصل معان ☆⬇️.
+قناه يوزرات مطورين السورس💕🥀.
+محتاج تنصب بوت ببلاش تواصل معانا☆⬇️.
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = ' 𝐓𝐑𝐄𝐕𝐎𝐑☆',url="t.me/trrevor"},{text = ' 𝐅𝐀𝐖𝐙𝐈𝐈☆', url="t.me/Fr3on1"}},
-{{text = '🄶??𝐆𝐀𝐌𝐁𝐎𝐋☆',url="t.me/G8_00"}},
+{{text = '𝐆𝐀𝐌𝐁𝐎𝐋☆',url="t.me/G8_00"}},
 {{text = ' بوت التواصل',url="t.me/trevor1_bot"}}, 
 {{text = '《𝚂𝙾𝚄𝚁𝙲𝙴 𝚃𝚁𝙴𝚅𝙾𝚁》 ', url="t.me/trevor_0"}},
 } 
@@ -3325,10 +3325,9 @@ end
 if text == 'قناه السورس' or text == 'سورس' or text == 'السورس' or text == 'يا سورس' then  
 local Text = [[  
 [⚚━━━━━⚚𝐓𝐑𝐄𝐕𝐎𝐑⚚━━━━━⚚](t.me/trrevor) 
-☆☆☆☆☆☆☆☆☆☆☆☆☆☆
-    ←←← تعلم ولا تتألم →→→
-    →→→ تألم ولا تتكلم ←←←
-☆☆☆☆☆☆☆☆☆☆☆☆☆☆
+✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯
+  ᎳᎬᏞᏟΌᎷᎬ ͲΌ ՏΌႮᎡᏟᎬ ͲᎡᎬᏙΌᎡ
+✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯
 [⚚━━━━━⚚𝐓𝐑𝐄𝐕𝐎𝐑⚚━━━━━⚚](t.me/trrevor) 
 ]]  
 keyboard = {}   
@@ -3336,7 +3335,6 @@ keyboard.inline_keyboard = {
 {{text = '◍ 𝐓𝐑𝐄𝐕𝐎𝐑 ',url="t.me/trrevor"},{text = '◍ 𝐅𝐀𝐖𝐙𝐈𝐈 𖣌 ',url="t.me/Fr3on1"}},
 {{text = '◍ 𝐆𝐀𝐌𝐁𝐎𝐋 ', url="t.me/G8_00"}},
 {{text = '◍ 𝐌𝐘 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🥀  ', url="t.me/trevor_0"}},
-{{text = '◍ 𝐌𝐘 𝐆𝐑𝐎𝐔𝐏 🥀  ', url="t.me/Bar_Fawzii"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendanimation?chat_id=' .. msg.chat_id_ .. '&animation=https://t.me/trevor_0/47&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -3360,7 +3358,7 @@ https.request("https://api.telegram.org/bot"..token..'/sendanimation?chat_id=' .
 end
 
 
-if text == 'بقدونس' or text == 'المبرمج' or text == 'زيزو' or text == 'تريفور' then
+if text == 'بقدونس' or text == 'زيزو' or text == 'تريفور' then
 local msg_id = msg.id_/2097152/0.5
 local Text = [[
  السالك يرايق 💋🌚 
@@ -3370,16 +3368,16 @@ keyboard.inline_keyboard = {{{text = '  𓌹 ˹𝐙𝐈𝐙𝐎¹˼ 𓌺 ',url="
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/trrevor&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-
-if text == '⚚━━━━━⚚𝐓𝐑𝐄𝐕𝐎𝐑⚚━━━━━⚚' or text == 'المطور' then
-local msg_id = msg.id_/2097152/0.5
-local Text = [[
-صاحب السورس 🌚💋
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {{{text = '  𓌹 ˹𝐙𝐈𝐙𝐎¹˼ 𓌺 ',url="t.me/trrevor"}},}
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/trrevor&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end
+if text == 'زهرا' or text == "زوزو" or text == "zahra" then
+  local msg_id = msg.id_/2097152/0.5
+  local Text = [[
+  اخت بقدونس 💋❤
+  متدخلش تحكها عشان ميتقلش منك ☆
+  ]]
+  keyboard = {} 
+  keyboard.inline_keyboard = {{{text = '  𓌹 ˹ ZHRA ¹˼ 𓌺 ',url="t.me/zhraa5555555"}},}
+  https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/zhraa5555555&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+  end
 
 if text == 'مكفهر' or text == "شهد" or text == "كاتبه" then
 local msg_id = msg.id_/2097152/0.5
@@ -3402,7 +3400,7 @@ keyboard.inline_keyboard = {{{text = '  𓌹 𝐗𝐗𝐗¹˼ 𓌺 ',url="t.me/t
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/trevor3_bot&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text == 'بوت صنع منشورات بزرائر 📔' or text == "منشورات بزرائر" then
+if text == 'بوت صنع منشورات بزرائر 📔' or text == "بوت زراير" then
 local msg_id = msg.id_/2097152/0.5
 local Text = [[
 اصنع منشورك وأضف عليه مميزات الزرائر ❤😉
@@ -3435,6 +3433,18 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/G8_00&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
+if text == 'سيمو' or text == 'مرات غامبول' then  
+local Text = [[  
+𖤛 مرات وغامبل يات 𖤛
+]]  
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text = '𖤛ابعد متقربش𖤛',url="t.me/G8_S8"}},  
+
+}  
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/G8_S8&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
 if text == 'فوزي' or text == 'فرعون' then  
 local Text = [[  
 فرعون مصر 💋❤
@@ -4567,7 +4577,7 @@ else
 tdcli_function ({ID = "GetUser",user_id_ = SUDO,},function(arg,result) 
 local function taha(extra, taha, success)
 if taha.photos_[0] then
-local Name = '[《⬇️اتبع الازرار للتواصل مع》](t.me/trevor_0)\n['..result.first_name_..'](tg://user?id='..result.id_..')\n'
+local Name = '[《⇩ تواصل مع المطور م الاسفل 》](t.me/trevor_0)\n['..result.first_name_..'](tg://user?id='..result.id_..')\n'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -4575,9 +4585,6 @@ keyboard.inline_keyboard = {
 },
 {
 {text = 'اضف البوت الي مجموعتك √' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
-},
-{
-{text = 'لتنصيب بوتك ☆' ,url="t.me/trrevor"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -12263,9 +12270,6 @@ keyboard.inline_keyboard = {
 {
 {text = 'اضف البوت الي مجموعتك √' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
 },
-{
-{text = 'لتنصيب بوتك ☆' ,url="t.me/trrevor"},
-},
 }
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
@@ -12300,9 +12304,6 @@ keyboard.inline_keyboard = {
 },
 {
 {text = 'اضف البوت الي مجموعتك √' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
-},
-{
-{text = 'لتنصيب بوتك ☆' ,url="t.me/trrevor"},
 },
 }
 local function getpro(extra, result, success) 
@@ -13069,6 +13070,7 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendsticker?chat_id=' .. msg.chat_id_ .. '&sticker=https://t.me/Qtdao/15&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
+
 if text == 'طرطر' then
 local Text = [[
 ]]
@@ -13079,6 +13081,7 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/comxnxp/21&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
+
 if text == 'كره الساله' then
 local Text = [[
 ]]
@@ -13091,8 +13094,6 @@ https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. ms
 end
 if text == "تويت بالصور" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(3,300); 
-local Text =' ' 
-keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '《𝚂𝙾𝚄𝚁𝙲𝙴 𝚃𝚁𝙴𝚅𝙾𝚁》 ', url="t.me/trevor_0"}}, 
 } 
@@ -15040,7 +15041,7 @@ local List = {
  🥀 - ??𝓽𝓪𝓼𝓽  ➪ #stast 🥀.
  🥀 - 𝓲𝓭 ➪ #id ⸙ 🥀.
  🥀 - 𝓰𝓶𝓪𝓼 ➪ #gmas ⸙ 🥀.
- 🥀 - 𝓶𝓼𝓰𝓼 ➪ #msgs 🥀.
+ 🥀 - 𝓶𝓼??𝓼 ➪ #msgs 🥀.
  🥀 - 𝗖𝗛 - ↝@trevor_0↜ 🥀.
 ]],
 [[
@@ -15054,7 +15055,7 @@ local List = {
 ◣: 𝒔𝒕𝒂𓂅 #stast 𓍯➥♡.
 ◣: 𝐮𝐬𝐞𝐫𓂅 #username 𓍯➥♡.
 ◣: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➥♡.
-◣: 𝐢𝐝 𓂅 #id 𓍯➥♡.
+◣: ??𝐝 𓂅 #id 𓍯➥♡.
 ◣: 𝗖𝗛 - ↝@trevor_0↜ 🥀.
 ]],
 [[
@@ -15937,7 +15938,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 ᯓ 𝗨𝗦𝗘𝗥𝗡𝗮𝗺𝗘 . #username ☆ ꙰
-ᯓ 𝗦𝗧𝗮𝗦𝗧 . #stast ☆ ꙰
+ᯓ 𝗦??𝗮𝗦𝗧 . #stast ☆ ꙰
 ᯓ 𝗜𝗗 . #id ☆ ꙰
 ᯓ 𝗚𝗮𝗺𝗘𝗦 . #game ☆ ꙰
 ᯓ 𝗺𝗦𝗚?? . #msgs ??🇬 ꙰
@@ -16189,7 +16190,7 @@ database:del(bot_id.."gemadd:user" .. msg.chat_id_ .. "" .. msg.sender_user_id_)
 local numadded = string.match(text, "(%d+)") 
 local iduserr = database:get(bot_id..'idgem:user'..msg.chat_id_)  
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..iduserr,numadded)  
-send(msg.chat_id_, msg.id_,  1, " 🥀| تم اضافة له {"..numadded..'} من النقود', 1 , 'md')  
+send(msg.chat_id_, msg.id_,  1, " ??| تم اضافة له {"..numadded..'} من النقود', 1 , 'md')  
 end
 ------------------------------------------------------------
 if text and text:match("^اضف رسائل (%d+)$") and msg.reply_to_message_id_ == 0 and Constructor(msg) then    
