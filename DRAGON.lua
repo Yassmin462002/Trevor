@@ -1003,7 +1003,7 @@ if text == "/start" then
 if not DevSoFi(msg) then
 local Namebot = (database:get(bot_id..'Name:Bot') or 'تريفور') 
 local DRAGON_Msg = { 
- ⸙ اهلا انـــــــآآ بوت ٱسمـي '..Namebot..' 『 اختصاصي حمايه المجموعات ..\n ➥ 』『 مٓ ـن الاسبام و التوجيه والتكرار..الخ ..\n』『لتفعيل البوت اتــبع الشــروط ✓』\n『اضف البوت الـۍ مجموعتك』↻\n『ارفع البوت مشرف فۍ المجموعه』♕ \n『اكتب تفعيل فۍ المجموعه و سيتم تفعيل البوت ورفع مشرفي المجموعه تقائي』⚫
+' ⸙ اهلا انـــــــآآ بوت ٱسمـي '..Namebot..' 『 اختصاصي حمايه المجموعات ..\n ➥ 』『 مٓ ـن الاسبام و التوجيه والتكرار..الخ ..\n 』『لتفعيل البوت اتــبع الشــروط ✓』\n『اضف البوت الـۍ مجموعتك』↻\n『ارفع البوت مشرف فۍ المجموعه』♕\n『اكتب تفعيل فۍ المجموعه و سيتم تفعيل البوت ورفع مشرفي المجموعه تقائي』⚫',
 } 
 Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)] 
 local msg_id = msg.id_/2097152/0.5  
@@ -1014,6 +1014,9 @@ keyboard.inline_keyboard = {
 },
 {
 {text = '  اضف البوت الي مجموعتك'   ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
+},
+{
+{text = ' سورس تريفور' ,url="http://t.me/trevor_0"},
 },
 }
 local function getpro(extra, result, success) 
@@ -1062,29 +1065,6 @@ https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. 
 end
 end
 
-if Text == 'اغاني' then
-local Text = 'يتم تحديث ملف الاغاني ليصبح أقوى 🔥❤'
-https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
-return false
-end
-
-if Text == 'تويت بالصور' then
-local Text = 'يتم تحديث ملف تويت بالصور ليصبح أقوى 🔥❤'
-https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
-return false
-end
-
-if Text == 'الافلام' then
-local Text = 'يتم تحديث ملف الافلام ليصبح أقوى 🔥❤'
-https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
-return false
-end
-
-if Text == 'لو خيروك بالصور' then
-local Text = 'يتم تحديث لو خيروك بالصور ليصبح أقوى 🔥❤'
-https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
-return false
-end
 
 if text == 'قـسم الالـعـاب' then
 local Text = 'مرحب بيك في قسم الالعاب'
@@ -3324,11 +3304,9 @@ end,nil)
 end
 if text == 'قناه السورس' or text == 'سورس' or text == 'السورس' or text == 'يا سورس' then  
 local Text = [[  
-[⚚━━━━━⚚𝐓𝐑𝐄𝐕𝐎𝐑⚚━━━━━⚚](t.me/trrevor) 
-✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯
-  ᎳᎬᏞᏟΌᎷᎬ ͲΌ ՏΌႮᎡᏟᎬ ͲᎡᎬᏙΌᎡ
-✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯
-[⚚━━━━━⚚𝐓𝐑𝐄𝐕𝐎𝐑⚚━━━━━⚚](t.me/trrevor) 
+  ✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯
+[ᎳᎬᏞᏟΌᎷᎬ ͲΌ ՏΌႮᎡᏟᎬ ͲᎡᎬᏙΌᎡ](t.me/trevor_0) 
+  ✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯
 ]]  
 keyboard = {}   
 keyboard.inline_keyboard = {  
