@@ -12983,7 +12983,7 @@ send(msg.chat_id_, msg.reply_to_message_id_, 'كـسـمـك لاجـل تيم �
 send(msg.chat_id_, msg.reply_to_message_id_, 'كـسـمـك لاجـل تيم ايدك ༒') 
 send(msg.chat_id_, msg.reply_to_message_id_, 'كـسـمـك لاجـل '..result.first_name_..' ༒') 
 send(msg.chat_id_, msg.reply_to_message_id_, 'الـنـهـايـه ༒')
-send(msg.chat_id_, msg.id_, فشخته 😹')
+send(msg.chat_id_, msg.id_, ' فشخته 😹')
 send(msg.chat_id_, msg.id_, 'هريب زي الهقرات 😹')
 send(msg.chat_id_, msg.reply_to_message_id_, 'ريب 1')
 send(msg.chat_id_, msg.reply_to_message_id_, 'ريب 2')
