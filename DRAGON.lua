@@ -925,7 +925,7 @@ keyboard.inline_keyboard = {
 local Texti = 'تم تعديل صلاحياته'
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
-SourceCh(msg) and text == '/homet7kom' then
+if SourceCh(msg) and text == '/homet7kom' then
 local Teext =[[ 
 اتبع الازرار للتحكم ف العضو
 ]]
