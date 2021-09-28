@@ -817,7 +817,7 @@ keyboard.inline_keyboard = {
 {{text = 'تحكم ف العضو', callback_data="/t7kom"}},
 {{text = 'تعديل الصلاحيات', callback_data="/sla7yat"}},
 }
-return https.request("https://api.telegram.org/bot"..token.. /editMessagecaption?chat_id= ..Chat_id.. &caption= ..URL.escape(Teext).. &message_id= ..msg_idd.. &disable_web_page_preview=true&reply_markup= ..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token.."/editMessagecaption?chat_id= ..Chat_id.. &caption= ..URL.escape(Teext).. &message_id= ..msg_idd.. &disable_web_page_preview=true&reply_markup= ..JSON.encode(keyboard))  
 end
  
 if SourceCh(msg) and text == '/t7kom' then
