@@ -18519,7 +18519,7 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝐆𝐀𝐌𝐁𝐎𝐋☆',url="t.me/G8_00"},{{text = '𝐓𝐑𝐄𝐕𝐎𝐑☆',url="t.me/trrevor"},
+{{text = '𝐆𝐀𝐌𝐁𝐎𝐋☆',url="t.me/G8_00"},{text = '𝐓𝐑𝐄𝐕𝐎𝐑☆',url="t.me/trrevor"}},
 {text = '𝐅𝐀𝐖𝐙𝐈𝐈☆', url="t.me/Fr3on1"}},
 {{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/HHH"}},
 }
@@ -18535,9 +18535,9 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝐆𝐀𝐌𝐁𝐎𝐋☆',url="t.me/G8_00"},
+{{text = '𝐆𝐀𝐌𝐁𝐎𝐋☆',url="t.me/G8_00"}},
 {text =  '𝐅𝐀𝐖𝐙𝐈𝐈☆', url="t.me/Fr3on1"}},
-{{text =  '𝐓𝐑𝐄𝐕𝐎𝐑☆',url="t.me/trrevor"},
+{{text =  '𝐓𝐑𝐄𝐕𝐎𝐑☆',url="t.me/trrevor"}},
 {{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/change-hhh"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -18571,9 +18571,9 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝐆𝐀𝐌𝐁𝐎𝐋☆',url="t.me/G8_00"},
+{{text = '𝐆𝐀𝐌𝐁𝐎𝐋☆',url="t.me/G8_00"}},
 {text =  '𝐅𝐀𝐖𝐙𝐈𝐈☆', url="t.me/Fr3on1"}},
-{{text =  '𝐓𝐑𝐄𝐕𝐎𝐑☆',url="t.me/trrevor"},
+{{text =  '𝐓𝐑𝐄𝐕𝐎𝐑☆',url="t.me/trrevor"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -18586,9 +18586,9 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝐆𝐀𝐌𝐁𝐎𝐋☆',url="t.me/G8_00"},
+{{text = '𝐆𝐀𝐌𝐁𝐎𝐋☆',url="t.me/G8_00"}},
 {text =  '𝐅𝐀𝐖𝐙𝐈𝐈☆', url="t.me/Fr3on1"}},
-{{text =  '𝐓𝐑𝐄𝐕𝐎𝐑☆',url="t.me/trrevor"},
+{{text =  '𝐓𝐑𝐄𝐕𝐎𝐑☆',url="t.me/trrevor"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -18627,6 +18627,7 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '◉ ᯓ 𓆩 ˹𝐈𝐃𝐊 || بقــدونـسـ˼ 𓆪 ࿐',url="t.me/trrevor"}},
+{{text = 'ᏴᎪᎡ', callback_data="/ahmeda"}},
 {{text = 'ᏴΌͲՏ', callback_data="/bad0"}},
 
 local msg_id = msg.id_/2097152/0.5
@@ -18734,20 +18735,20 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝐆𝐀𝐌𝐁𝐎𝐋☆',url="t.me/G8_00"},
+{{text = '𝐆𝐀𝐌𝐁𝐎𝐋☆',url="t.me/G8_00"}},
 {text = '𝐅𝐀𝐖𝐙𝐈𝐈☆', url="t.me/Fr3on1"}},
-{{text = '𝐓𝐑𝐄𝐕𝐎𝐑☆',url="t.me/trrevor"},
+{{text = '𝐓𝐑𝐄𝐕𝐎𝐑☆',url="t.me/trrevor"}},
 {{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/HHH"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 
-if SourceCh(msg) and text == '/banfai1' then
+if SourceCh(msg) and text == 'ahmeda' then
 local Teext =[[ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '◉ ᯓ 𓆩 ˹✯𝐓𝐄𝐀𝐌 || 𝐈𝐃𝐊˼ 𓆪 ࿐',url="t.me/team_fawzii"}},
+{{text = 'BAR NIGHT',url="t.me/Bar_NIGHT"}},
 {{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/fawzi-all"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -18757,7 +18758,17 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '✯ ᎻᎬᏞᏢ 🛠〢',url="t.me/Q_llk"},
+{{text = '✯ ᎻᎬᏞᏢ 🛠〢',url="t.me/Q_llk"}},
+{{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/fawzi-all"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
+end
+if SourceCh(msg) and text == '/banfai1' then
+local Teext =[[ 
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '◉ ᯓ 𓆩 ˹✯𝐓𝐄𝐀𝐌 || 𝐈𝐃𝐊˼ 𓆪 ࿐',url="t.me/team_fawzii"}},
 {{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/fawzi-all"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
