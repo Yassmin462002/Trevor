@@ -18413,12 +18413,12 @@ keyboard.inline_keyboard = {
 {{text = 'صراحه', callback_data="/help14"},{text = 'حروف', callback_data="/help21"}}, 
 {{text = 'اسالني', callback_data="/hakwl"},{text = 'اختبار الذكاء', callback_data="/wyauuu"}}, 
 {{text = 'مستقبلي', callback_data="/whklpp"},{text = 'الابراج', callback_data="/uwujjh"}}, 
-{{text = 'ثيم', callback_data="/help15"},{{text = 'حروف بالصور', callback_data="/Xcvb"},
+{{text = 'ثيم', callback_data="/help15"},{text = 'حروف بالصور', callback_data="/Xcvb"},
 {{text = 'بتكره دا', callback_data="/help16"},{text = 'نكته', callback_data="/help23"}}, 
-{{text = 'غنيلي', callback_data="/help17"}},{{text = 'نسبه جمالي', callback_data="/help18"},
-{{text = 'سمعني', callback_data="/8nely"}},{{text = 'تحكم', callback_data="/homet7kom"},
+{{text = 'غنيلي', callback_data="/help17"},{text = 'نسبه جمالي', callback_data="/help18"},
+{{text = 'سمعني', callback_data="/8nely"},{text = 'تحكم', callback_data="/homet7kom"}},
 {{text = '⌯القائمه الرئيسيه⌯', callback_data="/add"}},
-{{text = ' ������ ��� ', url="t.me/trevor_0"}},
+{{text = ' •━.•♫•♬•𝐼𝒟𝒦•♬•♫•. ━• ', url="t.me/trevor_0"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -18446,7 +18446,7 @@ keyboard.inline_keyboard = {
 {text = '⌯ الالــعــاب المـتطــوره ⌯', callback_data="/DRG"},
 },
 {
-{text = ' ������ ��� ', url="t.me/trevor_0"},
+{text = ' •━.•♫•♬•𝐼𝒟𝒦•♬•♫•. ━• ', url="t.me/trevor_0"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -18482,7 +18482,7 @@ keyboard.inline_keyboard = {
 {text = '• الجوزاء 🌩', callback_data="/zguza"},{text = '• الدلو 🦯', callback_data="/zdlu"},
 },
 {
-{text = ' ������ ��� ', url="t.me/trevor_0"},
+{text = '•━.•♫•♬•𝐼𝒟𝒦•♬•♫•. ━• ', url="t.me/trevor_0"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -18502,7 +18502,7 @@ keyboard.inline_keyboard = {
 {text = 'معلومات عن السورس', callback_data="/change-ghjjgyy"},
 },
 {
-{text = ' ������ ��� ', url="t.me/trevor_0"},
+{text = ' •━.•♫•♬•𝐼𝒟𝒦•♬•♫•. ━• ', url="t.me/trevor_0"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
