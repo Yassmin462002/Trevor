@@ -18415,7 +18415,7 @@ keyboard.inline_keyboard = {
 {{text = 'مستقبلي', callback_data="/whklpp"},{text = 'الابراج', callback_data="/uwujjh"}}, 
 {{text = 'ثيم', callback_data="/help15"},{text = 'حروف بالصور', callback_data="/Xcvb"},
 {{text = 'بتكره دا', callback_data="/help16"},{text = 'نكته', callback_data="/help23"}}, 
-{{text = 'غنيلي', callback_data="/help17"},{text = 'نسبه جمالي', callback_data="/help18"},
+{{text = 'غنيلي', callback_data="/help17"},{text = 'نسبه جمالي', callback_data="/help18"}},
 {{text = 'سمعني', callback_data="/8nely"},{text = 'تحكم', callback_data="/homet7kom"}},
 {{text = '⌯القائمه الرئيسيه⌯', callback_data="/add"}},
 {{text = ' •━.•♫•♬•𝐼𝒟𝒦•♬•♫•. ━• ', url="t.me/trevor_0"}},
