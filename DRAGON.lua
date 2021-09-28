@@ -2943,7 +2943,7 @@ end
 if num2 == 0 then
 send(msg.chat_id_, msg.id_," ") 
 else
-send(msg.chat_id_, msg.id_,"✯ تمت ترقيه ❮ ".num2.." ❯ من الادمنيه") 
+send(msg.chat_id_, msg.id_,"✯ تمت ترقيه ❮ "..num2.." ❯ من الادمنيه") 
 end
 end,nil)   
 end
