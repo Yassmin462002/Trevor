@@ -920,8 +920,6 @@ keyboard.inline_keyboard = {
 {
 {text = 'اضافه مشرفين '..promote, callback_data='amr@'..user..'/user@'..user_id.."/addadmin"..promotee},
 },
-}
-{text = 'اضافه مشرفين '..promote, callback_data='amr@'..user..'/user@'..user_id.."/addadmin"..promotee},
 {{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/homet7kom"}},
 }
 local Texti = 'تم تعديل صلاحياته'
