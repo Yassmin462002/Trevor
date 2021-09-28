@@ -6198,7 +6198,7 @@ if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false 
 sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, ban.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n• 🖤 | 𝑼𝑬𝑺 : '..username..' \n• 🖤 | 𝑴𝑺𝑮 : '..Msguser..' \n• 🖤 | 𝑺𝑻𝑨 : '..Rutba(msg.sender_user_id_,msg.chat_id_)..'  \n• 🖤 | 𝑰𝑫 :  '..msg.sender_user_id_..' \n• 🖤 | b𝐼𝑂 : '..getbioY..' \n• 🖤 | 𝐶𝐻 : t.me/trevor_0 \n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
-send(msg.chat_id_, msg.id_, \n ¦✙ بيك عزيزي ✯❴'..Name..'❵✯ \n𖤍〢•𝐮𝐬𝐞𝐫    '..username..'  ↝🕊️\n 𖤍〢•𝐦𝐬𝐠   '..Msguser..' .↝🕊️\n 𖤍〢•𝐒𝐭𝐚𝐬   '..Rutba(msg.sender_user_id_,msg.chat_id_)..'  ↝🕊️\n 𖤍〢•𝐢𝐝  '..msg.sender_user_id_..'  ↝🕊️\n𖤍〢•𝗖𝗛  t.me/trevor_0 ↝🕊️\n )
+send(msg.chat_id_, msg.id_, '\n ¦✙ بيك عزيزي ✯❴'..Name..'❵✯ \n𖤍〢•𝐮𝐬𝐞𝐫    '..username..'  ↝🕊️\n 𖤍〢•𝐦𝐬𝐠   '..Msguser..' .↝🕊️\n 𖤍〢•𝐒𝐭𝐚𝐬   '..Rutba(msg.sender_user_id_,msg.chat_id_)..'  ↝🕊️\n 𖤍〢•𝐢𝐝  '..msg.sender_user_id_..'  ↝🕊️\n𖤍〢•𝗖𝗛  t.me/trevor_0 ↝🕊️\n ')
 else
 send(msg.chat_id_, msg.id_,  \n ✯ الصوره ~⪼ ليس لديك صور في حسابك .. [\n𖤍〢•𝐮𝐬𝐞𝐫   '..username..' \n 𖤍〢•𝐦𝐬𝐠   '..Msguser..' \n 𖤍〢•𝐢𝐝  '..msg.sender_user_id_..' \n𖤍〢•𝗖𝗛 t.me/trevor_0\n )
 end 
