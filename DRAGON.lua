@@ -817,7 +817,7 @@ keyboard.inline_keyboard = {
 {{text = 'تحكم ف العضو', callback_data="/t7kom"}},
 {{text = 'تعديل الصلاحيات', callback_data="/sla7yat"}},
 }
-return https.request("https://api.telegram.org/bot"..token.."/editMessagecaption?chat_id= ..Chat_id.. &caption= ..URL.escape(Teext).. &message_id= ..msg_idd.. &disable_web_page_preview=true&reply_markup= ..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
  
 if SourceCh(msg) and text == '/t7kom' then
@@ -17720,7 +17720,7 @@ keyboard.inline_keyboard = {
 {text = 'هيا بنا', callback_data="/afkl"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/afkl' then
 local Teext =[[
@@ -17732,7 +17732,7 @@ keyboard.inline_keyboard = {
 {text = 'الامام', callback_data="/amen"},{text = 'الخلف', callback_data="/should"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/amen' then
 local Teext =[[
@@ -17744,7 +17744,7 @@ keyboard.inline_keyboard = {
 {text = 'هيا', callback_data="/have"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/should' then
 local Teext =[[
@@ -17756,7 +17756,7 @@ keyboard.inline_keyboard = {
 {text = 'هيا', callback_data="/have"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/have' then
 local Teext =[[
@@ -17768,7 +17768,7 @@ keyboard.inline_keyboard = {
 {text = 'منتظر', callback_data="/VBV"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 
 if SourceCh(msg) and text == '/VBV' then
@@ -17781,7 +17781,7 @@ keyboard.inline_keyboard = {
 {text = 'احد ما خرج من المنزل', callback_data="/ALLL"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/ALLL' then
 local Teext =[[
@@ -17793,7 +17793,7 @@ keyboard.inline_keyboard = {
 {text = 'هيا', callback_data="/Jake"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/Jake' then
 local Teext =[[
@@ -17805,7 +17805,7 @@ keyboard.inline_keyboard = {
 {text = 'تعالي نذهب الي الضوء', callback_data="/GGGG"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/GGGG' then
 local Teext =[[
@@ -17817,7 +17817,7 @@ keyboard.inline_keyboard = {
 {text = 'ياالهي كان هناك', callback_data="/can"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/can' then
 local Teext =[[
@@ -17829,7 +17829,7 @@ keyboard.inline_keyboard = {
 {text = 'انه مغلق', callback_data="/zxz"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/zxz' then
 local Teext =[[
@@ -17841,7 +17841,7 @@ keyboard.inline_keyboard = {
 {text = 'هكمل', callback_data="/optionis"},{text = 'انسحب', callback_data="/looks"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/optionis' then
 local Teext =[[
@@ -17860,7 +17860,7 @@ keyboard.inline_keyboard = {
 {text = 'الخضار', callback_data="/allowj"},{text = 'الموت', callback_data="/allaly"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/klllag' then
 local Teext =[[
@@ -17872,7 +17872,7 @@ keyboard.inline_keyboard = {
 {text = 'العب مره اخري', callback_data="/ahakaka"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/allowj' then
 local Teext =[[
@@ -17884,7 +17884,7 @@ keyboard.inline_keyboard = {
 {text = 'العب مره اخري', callback_data="/ahakaka"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/dulljob' then
 ght = math.random(1,57); 
@@ -17908,7 +17908,7 @@ keyboard.inline_keyboard = {
 {text = 'العب مره اخري', callback_data="/ahakaka"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/akakakk' then
 local Teext =[[
@@ -17920,7 +17920,7 @@ keyboard.inline_keyboard = {
 {text = 'العب مره اخري', callback_data="/ahakaka"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/kalalal' then
 local Teext =[[
@@ -17932,7 +17932,7 @@ keyboard.inline_keyboard = {
 {text = 'العب مره اخري', callback_data="/ahakaka"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/Kelly' then
 local Teext =[[
@@ -17944,7 +17944,7 @@ keyboard.inline_keyboard = {
 {text = 'العب مره اخري', callback_data="/ahakaka"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 
 
@@ -17959,7 +17959,7 @@ keyboard.inline_keyboard = {
 {text = 'العب مره اخري', callback_data="/ahakaka"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/ahakaka' then
 local Teext = [[
@@ -17971,7 +17971,7 @@ keyboard.inline_keyboard = {
 {text = 'حسنا', callback_data="/guitar"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/WTT' then
 local Teext =[[
@@ -17983,7 +17983,7 @@ keyboard.inline_keyboard = {
 {text = 'العاب مجدداً', callback_data="/ahakaka"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/guitar' then
 local Teext =[[
@@ -17998,7 +17998,7 @@ keyboard.inline_keyboard = {
 {text = 'المسمار', callback_data="/Karen"},{text = 'انت', callback_data="/WTT"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/Karen' then
 local Teext =[[
@@ -18010,7 +18010,7 @@ keyboard.inline_keyboard = {
 {text = 'سوال اخر', callback_data="/whoa"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/whoa' then
 local Teext =[[
@@ -18025,7 +18025,7 @@ keyboard.inline_keyboard = {
 {text = 'القمر', callback_data="/WTT"},{text = 'الضابط', callback_data="/fighting"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/fighting' then
 local Teext =[[
@@ -18037,7 +18037,7 @@ keyboard.inline_keyboard = {
 {text = 'سوال اخر', callback_data="/aliquots"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/aliquots' then
 local Teext =[[
@@ -18052,7 +18052,7 @@ keyboard.inline_keyboard = {
 {text = 'ابي', callback_data="/WTT"},{text = 'الثوم', callback_data="/WTT"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/trait' then
 local Teext =[[
@@ -18064,7 +18064,7 @@ keyboard.inline_keyboard = {
 {text = 'سوال اخر', callback_data="/qqpi"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/qqpi' then
 local Teext =[[
@@ -18079,7 +18079,7 @@ keyboard.inline_keyboard = {
 {text = 'الهواء', callback_data="/duio"},{text = 'النمله', callback_data="/WTT"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/duio' then
 local Teext =[[
@@ -18091,7 +18091,7 @@ keyboard.inline_keyboard = {
 {text = 'سوال اخر', callback_data="/yyuu"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/yyuu' then
 local Teext =[[
@@ -18106,7 +18106,7 @@ keyboard.inline_keyboard = {
 {text = 'حرف الالف', callback_data="/WTT"},{text = 'حرف اللام', callback_data="/your"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/your' then
 local Teext =[[
@@ -18118,7 +18118,7 @@ keyboard.inline_keyboard = {
 {text = 'سوال اخر', callback_data="/oppp"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/oppp' then
 local Teext =[[
@@ -18133,7 +18133,7 @@ keyboard.inline_keyboard = {
 {text = 'التراب', callback_data="/WTT"},{text = 'الصوت', callback_data="/plma"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/plma' then
 local Teext =[[
@@ -18145,7 +18145,7 @@ keyboard.inline_keyboard = {
 {text = 'سوال اخر', callback_data="/fusion"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/verp' then
 local Teext =[[
@@ -18157,7 +18157,7 @@ keyboard.inline_keyboard = {
 {text = 'نسبه الذكاء 100%', callback_data="/plling"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/pulng' then
 local Teext =[[
@@ -18169,7 +18169,7 @@ keyboard.inline_keyboard = {
 {text = 'نسبه الذكاء 70%', callback_data="/plling"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/pullin' then
 local Teext =[[
@@ -18181,7 +18181,7 @@ keyboard.inline_keyboard = {
 {text = 'نسبه الذكاء 40%', callback_data="/plling"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/plling' then
 local Teext =[[
@@ -18193,7 +18193,7 @@ keyboard.inline_keyboard = {
 {text = 'نسبه الذكاء 0%', callback_data="/plling"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 
 if SourceCh(msg) and text == '/fusion' then
@@ -18209,7 +18209,7 @@ keyboard.inline_keyboard = {
 {text = 'بعد الحرب العالمية', callback_data="/akkakak"},{text = 'في حرب فيتنام', callback_data="/WTT"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/akkakak' then
 local Teext =[[
@@ -18221,7 +18221,7 @@ keyboard.inline_keyboard = {
 {text = 'لبدا اللعبه من جديد', callback_data="/ahakaka"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/mute-name' then
 local Teext =[[
@@ -18237,7 +18237,7 @@ keyboard.inline_keyboard = {
 {{text = '⌯القائمه الرئيسيه⌯', callback_data="/add"}},
 {{text = ' ������ ��� ', url="t.me/trevor_0"}},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 
 if SourceCh(msg) and text ==  "حزوره" or text == "/help34" then
@@ -18400,7 +18400,7 @@ keyboard.inline_keyboard = {
 {{text = '⌯القائمه الرئيسيه⌯', callback_data="/add"}},
 {{text = ' ������ ��� ', url="t.me/trevor_0"}},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/change-names' then
 local Teext =[[
@@ -18469,7 +18469,7 @@ keyboard.inline_keyboard = {
 {{text = '⌯القائمه الرئيسيه⌯', callback_data="/add"}},
 {{text = ' ������ ��� ', url="t.me/trevor_0"}},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/homet7kom' or text == "/help18" or text == "/help23" or text == "/Xcvb" or text == "/uwujjh" or text == "/wyauuu" or text == "/help21" or text == "/help19" or text == "/help25" or text == "/help56" or text == "/8nely" or text == "/help17" or text == "/help16" or text == "/help15" or text == "/whklpp" or text == "/hakwl" or text == "/help14" or text == "/help13" or text == "/help20" or text == "/help12" then
 local Text = '⸙ جاري عرض الامر المطلوب ⸙'
@@ -18498,7 +18498,7 @@ keyboard.inline_keyboard = {
 {text = ' ������ ��� ', url="t.me/trevor_0"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/zDRGd' then
 local Teext =[[
@@ -18534,7 +18534,7 @@ keyboard.inline_keyboard = {
 {text = ' ������ ��� ', url="t.me/trevor_0"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 
 if SourceCh(msg) and text == '/change-hhh' then
@@ -18554,7 +18554,7 @@ keyboard.inline_keyboard = {
 {text = ' ������ ��� ', url="t.me/trevor_0"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/change-hklp' then
 local Teext =[[
@@ -18572,7 +18572,7 @@ keyboard.inline_keyboard = {
 {text = '𝐅𝐀𝐖𝐙𝐈𝐈☆', url="t.me/Fr3on1"}},
 {{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/HHH"}},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/change-gfgjo' then
 local Teext =[[
@@ -18589,7 +18589,7 @@ keyboard.inline_keyboard = {
 {{text =  '𝐓𝐑𝐄𝐕𝐎𝐑☆',url="t.me/trrevor"},
 {{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/change-hhh"}},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/change-ghjjgyy' then
 local Teext =[[
@@ -18609,7 +18609,7 @@ keyboard.inline_keyboard = {
 {{text = '˹تــواصــل الـسـورس˼',url="t.me/help_trevor"}}, 
 {{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/change-hhh"}},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/change-siusr' then
 local Teext =[[
@@ -18624,7 +18624,7 @@ keyboard.inline_keyboard = {
 {text =  '𝐅𝐀𝐖𝐙𝐈𝐈☆', url="t.me/Fr3on1"}},
 {{text =  '𝐓𝐑𝐄𝐕𝐎𝐑☆',url="t.me/trrevor"},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '•━.•♫•♬•𝐼𝒟𝒦•♬•♫•. ━•' then
 local Teext =[[
@@ -18639,7 +18639,7 @@ keyboard.inline_keyboard = {
 {text =  '𝐅𝐀𝐖𝐙𝐈𝐈☆', url="t.me/Fr3on1"}},
 {{text =  '𝐓𝐑𝐄𝐕𝐎𝐑☆',url="t.me/trrevor"},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/gambol-all' then
 local Teext =[[  
@@ -18653,7 +18653,7 @@ keyboard.inline_keyboard = {
 {{text = 'ᏟᎻ ᏀᎪᎷᏴΌᏞ', callback_data="/Ajobanf"},{text = 'ᏴᎪᎡ', callback_data="/banfai"}},  
 {{text = 'ᏴΌͲՏ', callback_data="/gqjik"}},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 
 if SourceCh(msg) and text == '/fawzi-all' then
@@ -18666,7 +18666,7 @@ keyboard.inline_keyboard = {
 {{text = 'ᏟᎻ ҒᎪᎳᏃᎥ', callback_data="/Ajobanf1"},{text = 'ᏴᎪᎡ', callback_data="/banfai1"}},  
 {{text = 'ᏴΌͲՏ', callback_data="/gqjik1"}},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 
 if SourceCh(msg) and text == '/ahm-all' then
@@ -18690,7 +18690,7 @@ keyboard.inline_keyboard = {
 {{text = 'ڪـــوکايــن ✄',url="t.me/G8_01"},{text = 'ᎻᎬᏞᏢ ᏀᎪᎷᏴΌᏞ',url="t.me/G8_00_all"}},
 {{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/gambol-all"}},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/banfai' then
 local Teext =[[
@@ -18700,7 +18700,7 @@ keyboard.inline_keyboard = {
 {{text = '◉ ᯓ ˹𝗕𝗔𝗥 𝗚8𝗔𝗠𝗕𝗢𝗟 ࿐',url="t.me/G8_00L"}},
 {{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/gambol-all"}},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/gqjik' then
 local Teext =[[
@@ -18713,7 +18713,7 @@ keyboard.inline_keyboard = {
 {{text = 'بــوت الحـمــايـه',url="t.me/G8_00_bot"}},
 {{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/gambol-all"}},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 
 if SourceCh(msg) and text == 'البوتات' then
@@ -18757,7 +18757,7 @@ keyboard.inline_keyboard = {
 {{text = '𓆩مــطور الـبـــوت𓆪', url="http://t.me/"..sudos.UserName}},
 {{text = '𖤍 اضافه البوت لمجموعتك 𖤍' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"}}, 
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/theytry' then
 local Teext =[[
@@ -18772,7 +18772,7 @@ keyboard.inline_keyboard = {
 {{text = 'ᴛᴡ 𝚃𝚁𝙴𝚅𝙾𝚁',url="t.me/help_trevor"}}, 
 {{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/HHH"}},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/units' then
 local Teext =[[
@@ -18788,7 +18788,7 @@ keyboard.inline_keyboard = {
 {{text = '𝐓𝐑𝐄𝐕𝐎𝐑☆',url="t.me/trrevor"},
 {{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/HHH"}},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 
 if SourceCh(msg) and text == '/banfai1' then
@@ -18799,7 +18799,7 @@ keyboard.inline_keyboard = {
 {{text = '◉ ᯓ 𓆩 ˹✯𝐓𝐄𝐀𝐌 || 𝐈𝐃𝐊˼ 𓆪 ࿐',url="t.me/team_fawzii"}},
 {{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/fawzi-all"}},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/Ajobanf1' then
 local Teext =[[  
@@ -18809,7 +18809,7 @@ keyboard.inline_keyboard = {
 {{text = '✯ ᎻᎬᏞᏢ 🛠〢',url="t.me/Q_llk"},
 {{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/fawzi-all"}},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/gqjik' then
 local Teext =[[
@@ -18819,7 +18819,7 @@ keyboard.inline_keyboard = {
 {{text = 'بــوت الحـمــايـه',url="t.me/𝐼𝒟𝒦1_BOT"}},
 {{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/fawzi-all"}},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/zzor' then
 local Teext =[[
@@ -18847,7 +18847,7 @@ keyboard.inline_keyboard = {
 {text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/zDRGd"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/zguza' then
 local Teext =[[
@@ -18864,7 +18864,7 @@ keyboard.inline_keyboard = {
 {text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/zDRGd"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 
 if SourceCh(msg) and text == '/zdlu' then
@@ -18895,7 +18895,7 @@ keyboard.inline_keyboard = {
 {text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/zDRGd"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 
 
@@ -18925,7 +18925,7 @@ keyboard.inline_keyboard = {
 {text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/zDRGd"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 
 
@@ -18957,7 +18957,7 @@ keyboard.inline_keyboard = {
 {text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/zDRGd"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 
 if SourceCh(msg) and text == '/zkos' then
@@ -18986,7 +18986,7 @@ keyboard.inline_keyboard = {
 {text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/zDRGd"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 
 
@@ -19018,7 +19018,7 @@ keyboard.inline_keyboard = {
 {text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/zDRGd"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 
 
@@ -19049,7 +19049,7 @@ keyboard.inline_keyboard = {
 {text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/zDRGd"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/zking' then
 local Teext =[[
@@ -19077,7 +19077,7 @@ keyboard.inline_keyboard = {
 {text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/zDRGd"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 
 if SourceCh(msg) and text == '/zsltan' then
@@ -19106,7 +19106,7 @@ keyboard.inline_keyboard = {
 {text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/zDRGd"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/zBanda' then
 local Teext =[[
@@ -19133,7 +19133,7 @@ keyboard.inline_keyboard = {
 {text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/zDRGd"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 
 if SourceCh(msg) and text == '/zgagy' then
@@ -19164,7 +19164,7 @@ keyboard.inline_keyboard = {
 {text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/zDRGd"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/zporg' then
 local Teext =[[
@@ -19188,7 +19188,7 @@ keyboard.inline_keyboard = {
 {text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/zDRGd"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 
 if SourceCh(msg) and text == '/lockwelcm' then
