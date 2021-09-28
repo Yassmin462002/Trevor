@@ -7618,7 +7618,7 @@ t = " ✯ الملف  ➠ "..file.."\n ✯ تم تعطيل ملف \n"
 else
 t = " ✯ بالتاكيد تم تعطيل ملف → "..file.."\n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/Ffasit/photo/main/File_Bot/commands.lua)
+local json_file, res = https.request("https://raw.githubusercontent.com/Ffasit/photo/main/File_Bot/commands.lua")
 if res == 200 then
 os.execute("rm -fr File_Bot/"..file)
 send(msg.chat_id_, msg.id_,t) 
