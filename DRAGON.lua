@@ -18572,7 +18572,7 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𝐆𝐀𝐌𝐁𝐎𝐋☆',url="t.me/G8_00"}},
-{text =  '𝐅𝐀𝐖𝐙𝐈𝐈☆', url="t.me/Fr3on1"}},
+{{text =  '𝐅𝐀𝐖𝐙𝐈𝐈☆', url="t.me/Fr3on1"}},
 {{text =  '𝐓𝐑𝐄𝐕𝐎𝐑☆',url="t.me/trrevor"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -18587,7 +18587,7 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𝐆𝐀𝐌𝐁𝐎𝐋☆',url="t.me/G8_00"}},
-{text =  '𝐅𝐀𝐖𝐙𝐈𝐈☆', url="t.me/Fr3on1"}},
+{{text =  '𝐅𝐀𝐖𝐙𝐈𝐈☆', url="t.me/Fr3on1"}},
 {{text =  '𝐓𝐑𝐄𝐕𝐎𝐑☆',url="t.me/trrevor"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
