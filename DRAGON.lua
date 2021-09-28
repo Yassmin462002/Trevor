@@ -16955,19 +16955,6 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/yhu79/7&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if SourceCh(msg) and text == 'الرابط' or text == 'رابط'  then
-local Text = [[
- 〢اختار نوع الرابط الذي تريده ⇓
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'online', callback_data="/ven2"},{text = 'link photo', callback_data="/ven1"}},   
-{{text = 'text link', callback_data="/ven3"}},
-{{text = '𝐌𝐘 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 ', url="t.me/trevor_0"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end
 
 if SourceCh(msg) and text == "صلاحياته" and tonumber(msg.reply_to_message_id_) > 0 then    
 if tonumber(msg.reply_to_message_id_) ~= 0 then 
@@ -17016,75 +17003,43 @@ if SourceCh(msg) and text == 'okCaptcha'..data.sender_user_id_ then
 DeleteMessage(Chat_id, {[0] = Msg_id}) 
 return https.request("https://api.telegram.org/bot" .. token .. "/restrictChatMember?chat_id=" .. Chat_id .. "&user_id="..Ok_id .. "&can_send_messages=True&can_send_media_messages=True&can_send_other_messages=True&can_add_web_page_previews=True")
 end
-if SourceCh(msg) and text == '/ven3' then
-if not CoSu(data) then
-local notText = '✘ عذرا الاوامر هذه لا تخصك'
-https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
-return false
-end
-tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
-local link = bot_data:get(bot_id.."Private:Group:Link"..msg.chat_id_)            
-if link then                              
-send(msg.chat_id_,msg.id_,'.\nـــــــــــــــــــــــــ\n ['..ta.title_..']('..link..')')                          
-else                
-local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token..'/exportChatInviteLink?chat_id='..msg.chat_id_))
-if linkgpp.ok == true then 
-linkgp = 'Ꮮ Ꭵ Ν Ꮶ Ꮐ Ꭱ Ό Ⴎ Ꮲ''.\nـــــــــــــــــــــــــ\n ['..ta.title_..']('..linkgpp.result..')\nـــــــــــــــــــــــــ\n  ['..linkgpp.result..']
-else
-linkgp = ' لا يوجد رابط ارسل ضع رابط'
-end  
-DeleteMessage(Chat_id,{[0] = Msg_id})  
-send(msg.chat_id_, msg.id_,linkgp)              
-end      
-end,nil)
-end
-if SourceCh(msg) and text == '/ven1' then
-if not CoSu(data) then
-local notText = '✘ عذرا الاوامر هذه لا تخصك'
-https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
-return false
-end
-tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
-local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or bot_data:get(bot_id.."Private:Group:Link"..msg.chat_id_) 
-if linkgpp.ok == true then 
-local linkgp = '♪ `〢 Ꮮ Ꭵ Ν Ꮶ Ꮐ Ꭱ Ό Ⴎ Ꮲ'\nـــــــــــــــــــــــــ\n ['..ta.title_..']('..linkgpp.result..')\nـــــــــــــــــــــــــ\n  ['..linkgpp.result..']'
-keyboard = {} 
-keyboard.inline_keyboard = {{{text = ta.title_, url=linkgpp.result}},}
-DeleteMessage(Chat_id,{[0] = Msg_id})  
-https.request("https://api.telegram.org/bot"..token..'/sendmessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(linkgp).."&parse_mode=markdown&reply_markup="..JSON.encode(keyboard)) 
-else 
-send(msg.chat_id_, msg.id_,'✯ لا يوجد رابط ارسل ضع رابط') 
+if text == "الرابط" then 
+local status_Link = database:get(bot_id.."Link_Group:status"..msg.chat_id_) 
+if not status_Link then 
+send(msg.chat_id_, msg.id_,"الرابط معطل")  
+return false   
 end 
-end,nil) 
-end
-if SourceCh(msg) and text == '/ven2' then
-if not CoSu(data) then
-local notText = '✘ عذرا الاوامر هذه لا تخصك'
-https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
-return false
-end
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
-local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or bot_data:get(bot_id.."Private:Group:Link"..msg.chat_id_) 
+local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or database:get(bot_id.."Private:Group:Link"..msg.chat_id_) 
 if linkgpp.ok == true then 
-local linkgp = '♪ `〢 Ꮮ Ꭵ Ν Ꮶ Ꮐ Ꭱ Ό Ⴎ Ꮲ'\nـــــــــــــــــــــــــ\n ['..ta.title_..']('..linkgpp.result..')\nـــــــــــــــــــــــــ\n  ['..linkgpp.result..']'
+local Teext = '✧'..ta.title_..'\n'..linkgpp.result 
 local inline = {{{text = ta.title_, url=linkgpp.result}},} 
-DeleteMessage(Chat_id,{[0] = Msg_id})  
-send_inline_key(msg.chat_id_,linkgp,nil,inline,msg.id_/2097152/0.5) 
+send_inline_key(msg.chat_id_,Teext,nil,inline,msg.id_/2097152/0.5) 
 else 
-send(msg.chat_id_, msg.id_,'✯ لا يوجد رابط ارسل ضع رابط') 
+send(msg.chat_id_, msg.id_,'✧لا يوجد رابط ارسل ضع رابط') 
 end 
 end,nil) 
 end
-if SourceCh(msg) and text == '/help1' then
-if not Mod(data) then
-local notText = '✘ عذرا الاوامر هذه لا تخصك'
-https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
+
+if text == 'مسح الرابط' or text == 'مسح الرابط' then
+if Mod(msg) then     
+if AddChannel(msg.sender_user_id_) == false then
+local textchuser = database:get(bot_id..'text:ch:user')
+if textchuser then
+send(msg.chat_id_, msg.id_,'['..textchuser..']')
+else
+send(msg.chat_id_, msg.id_,' 🥀 لا تستطيع استخدام البوت \n 🥀  يرجى الاشتراك بالقناه اولا \n 🥀  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+end
 return false
+end
+send(msg.chat_id_,msg.id_," 🥀 تم مسح الرابط")           
+database:del(bot_id.."Private:Group:Link"..msg.chat_id_) 
+return false      
+end
 end
 local Teext =[[
 ⇊ اوامر القفل والفتح ✯
 •━.•♫•♬•𝐼𝒟𝒦•♬•♫•. ━•
-
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
