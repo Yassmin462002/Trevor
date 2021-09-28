@@ -4162,7 +4162,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '◉ ᯓ 𓆩 ˹★𝐈𝐃𝐊 || 𝐅𝐀𝐖𝐙𝐈𝐈˼ 𓆪 ࿐',url="t.me/Fr3on1"}},
-{{text = 'ᏟᎻ ҒᎪᎳᏃᎥ', callback_data="/Ajobanf1"},{text = 'ᏴᎪᎡ, callback_data="/banfai1"}},  
+{{text = 'ᏟᎻ ҒᎪᎳᏃᎥ', callback_data="/Ajobanf1"},{text = 'ᏴᎪᎡ', callback_data="/banfai1"}},  
 {{text = 'ᏴΌͲՏ', callback_data="/gqjik1"}},
 }
 local msg_id = msg.id_/2097152/0.5
