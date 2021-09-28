@@ -831,7 +831,7 @@ keyboard.inline_keyboard = {
 {{text = 'تقيد'},{text = 'الغاء تقيد'}},
 {{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/homet7kom"}},
 }
-return https.request("https://api.telegram.org/bot"..token.. /editMessagecaption?chat_id= ..Chat_id.. &caption= ..URL.escape(Teext).. &message_id= ..msg_idd.. &disable_web_page_preview=true&reply_markup= ..JSON.encode(keyboard)) 
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text == '/sla7yat' then
 local Teext =[[ 
@@ -936,7 +936,7 @@ keyboard.inline_keyboard = {
 {{text = 'تحكم ف العضو', callback_data="/t7kom"}},
 {{text = 'تحكم ف الصلاحيات', callback_data="/sla7yat"}},
 }
-return https.request("https://api.telegram.org/bot"..token.. /editMessagecaption?chat_id= ..Chat_id.. &caption= ..URL.escape(Teext).. &message_id= ..msg_idd.. &disable_web_page_preview=true&reply_markup= ..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
  end
 
 function GetFile_Bot(msg)
@@ -6398,7 +6398,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = 'سمعني بالاسم', callback_data="/sm3ny"},
 }
-return https.request("https://api.telegram.org/bot"..token.. /editMessagecaption?chat_id= ..Chat_id.. &caption= ..URL.escape(Teext).. &message_id= ..msg_idd.. &disable_web_page_preview=true&reply_markup= ..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
  
  if SourceCh(msg) and text == '/sm3ny' then
@@ -6416,7 +6416,7 @@ keyboard.inline_keyboard = {
 {{text = 'سمعني مسلم'},{{text = 'سمعني عنبه'},
 {{text = 'سمعني مهرجانات'},{{text = 'سمعني كايروكي'},
 }
-return https.request("https://api.telegram.org/bot"..token.. /editMessagecaption?chat_id= ..Chat_id.. &caption= ..URL.escape(Teext).. &message_id= ..msg_idd.. &disable_web_page_preview=true&reply_markup= ..JSON.encode(keyboard))  
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
  end
 if SourceCh(msg) and text == 'سمعني تامر حسني' then 
 T = math.random(3,12)
