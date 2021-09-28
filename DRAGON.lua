@@ -12731,8 +12731,7 @@ local text =
 ' }\n'..' ✯  الحظر  ➠ { '..banm..' }\n\n ✯═───═❲[《•♫•♬•𝐼𝒟𝒦•♬•♫•.》 ](t.me/trevor_0)❳═───═ ✯\n ✯ قناة سورس ايدك\n [ ❲[《𝚂𝙾𝚄𝚁𝙲𝙴 𝚃𝚁𝙴𝚅𝙾𝚁》 ](t.me/trevor_0)❳](t.me/trevor_0) \n'
 keyboard = {} 
 keyboard.inline_keyboard = {{text = 'اخفاء الاوامر', callback_data="/hide"}},
-{{text = ' 𝒮𝒪𝒰𝑅𝒞𝐸 𝐼𝒟𝒦 ', url="t.me/trevor_0"}},
-}
+{{text = ' 𝒮𝒪𝒰𝑅𝒞𝐸 𝐼𝒟𝒦 ', url="t.me/trevor_0"}}
 https.request("https://api.telegram.org/bot"..token..'/sendmessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(text).."&reply_to_message_id=markdown&reply_markup="..JSON.encode(keyboard)) 
 end
 if SourceCh(msg) and text ==('تثبيت') and msg.reply_to_message_id_ ~= 0 and Mod(msg) then  
