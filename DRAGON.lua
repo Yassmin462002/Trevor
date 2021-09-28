@@ -6388,7 +6388,7 @@ local Rrr = Texting[math.random(#Texting)]
 local abc = msg.id_/2097152/0.5
 https.request('https://api.telegram.org/bot'..token..'/sendVoice?chat_id='..msg.chat_id_..'&reply_to_message_id='..abc..'&voice=https://t.me/mmsst13/'..Rrr..'') 
 end
-if SourceCh(msg) and text == 'سمعني' or text == "/8nely" then then
+if SourceCh(msg) and text == 'سمعني' or text == "/8nely" then
 local Teext =[[ 
 اتبع الازرار لعرض ميزه سمعني الجديده
 ]]
