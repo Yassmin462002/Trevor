@@ -12728,10 +12728,10 @@ local text =
 ' }\n'..' ✯  الايدي  ➠ { '..idgp..
 ' }\n'..' ✯  الايدي بالصوره  ➠ { '..idph..
 ' }\n'..' ✯  الرفع  ➠ { '..setadd..
-' }\n'..' ✯  الحظر  ➠ { '..DRGm..' },
-\n•━.•♫•♬•𝐼𝒟𝒦•♬•♫•. ━•
+' }\n'..' ✯  الحظر  ➠ { '..DRGm..
+'\n•━.•♫•♬•𝐼𝒟𝒦•♬•♫•. ━•'..
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = 'اخفاء الاوامر', callback_data="/hide"}},
+keyboard.inline_keyboard = {{text = 'اخفاء الاوامر', callback_data="/hide"}},
 {{text = ' 𝒮𝒪𝒰𝑅𝒞𝐸 𝐼𝒟𝒦 ', url="t.me/trevor_0"}},
 }
 https.request("https://api.telegram.org/bot"..token..'/sendmessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(text).."&reply_to_message_id=markdown&reply_markup="..JSON.encode(keyboard)) 
