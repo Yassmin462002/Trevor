@@ -12729,14 +12729,12 @@ local text =
 ' }\n'..' ✯  الايدي بالصوره  ➠ { '..idph..
 ' }\n'..' ✯  الرفع  ➠ { '..setadd..
 ' }\n'..' ✯  الحظر  ➠ { '..DRGm..
-{
 keyboard = {} 
 keyboard.inline_keyboard = {{text = 'اخفاء الاوامر', callback_data="/hide"}},
 {{text = ' 𝒮𝒪𝒰𝑅𝒞𝐸 𝐼𝒟𝒦 ', url="t.me/trevor_0"}},
-}
 https.request("https://api.telegram.org/bot"..token..'/sendmessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(text).."&reply_to_message_id=markdown&reply_markup="..JSON.encode(keyboard)) 
 end
-if SourceCh(msg) and text ==('تثبيت') and msg.reply_to_message_id_ ~= 0 and Mod(msg) then  
+if SourceCh(msg) and text == ('تثبيت') and msg.reply_to_message_id_ ~= 0 and Mod(msg) then  
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = bot_data:get(bot_id..'text:ch:user')
 if textchuser then
