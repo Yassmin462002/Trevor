@@ -814,11 +814,11 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'تحكم ف العضو', callback_data="/t7kom"},
-{{text = 'تعديل الصلاحيات', callback_data="/sla7yat"},
+{{text = 'تحكم ف العضو', callback_data="/t7kom"}},
+{{text = 'تعديل الصلاحيات', callback_data="/sla7yat"}},
 }
 return https.request("https://api.telegram.org/bot"..token.. /editMessagecaption?chat_id= ..Chat_id.. &caption= ..URL.escape(Teext).. &message_id= ..msg_idd.. &disable_web_page_preview=true&reply_markup= ..JSON.encode(keyboard))  
- end
+end
  
 if SourceCh(msg) and text == '/t7kom' then
 local Teext =[[ 
@@ -826,9 +826,9 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'كتم'},{{text = 'الغاء كتم'},
-{{text = 'حظر'},{{text = 'الغاء حظر'},
-{{text = 'تقيد'},{{text = 'الغاء تقيد'},
+{{text = 'كتم'},{text = 'الغاء كتم'}},
+{{text = 'حظر'},{text = 'الغاء حظر'}},
+{{text = 'تقيد'},{text = 'الغاء تقيد'}},
 {{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/homet7kom"}},
 }
 return https.request("https://api.telegram.org/bot"..token.. /editMessagecaption?chat_id= ..Chat_id.. &caption= ..URL.escape(Teext).. &message_id= ..msg_idd.. &disable_web_page_preview=true&reply_markup= ..JSON.encode(keyboard)) 
@@ -933,8 +933,8 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'تحكم ف العضو', callback_data="/t7kom"},
-{{text = 'تحكم ف الصلاحيات', callback_data="/sla7yat"},
+{{text = 'تحكم ف العضو', callback_data="/t7kom"}},
+{{text = 'تحكم ف الصلاحيات', callback_data="/sla7yat"}},
 }
 return https.request("https://api.telegram.org/bot"..token.. /editMessagecaption?chat_id= ..Chat_id.. &caption= ..URL.escape(Teext).. &message_id= ..msg_idd.. &disable_web_page_preview=true&reply_markup= ..JSON.encode(keyboard))  
  end
