@@ -4148,7 +4148,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '✗غـــامــبول بــ↜ــرا حــيـاتـــــك✗¹ 𖠕',url="t.me/G8_00"}},
-{{text = 'ᏟᎻ ᏀᎪᎷᏴΌᏞ', callback_data="/Ajobanf"},{text = 'ᏴᎪᎡ, callback_data="/banfai"}},  
+{{text = 'ᏟᎻ ᏀᎪᎷᏴΌᏞ', callback_data="/Ajobanf"},{text = 'ᏴᎪᎡ', callback_data="/banfai"}},  
 {{text = 'ᏴΌͲՏ', callback_data="/gqjik"}},
 }
 local msg_id = msg.id_/2097152/0.5
