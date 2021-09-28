@@ -18736,7 +18736,7 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𝐆𝐀𝐌𝐁𝐎𝐋☆',url="t.me/G8_00"}},
-{text = '𝐅𝐀𝐖𝐙𝐈𝐈☆', url="t.me/Fr3on1"}},
+{{text = '𝐅𝐀𝐖𝐙𝐈𝐈☆', url="t.me/Fr3on1"}},
 {{text = '𝐓𝐑𝐄𝐕𝐎𝐑☆',url="t.me/trrevor"}},
 {{text = '✯𝙱𝙰𝙲𝙺↵', callback_data="/HHH"}},
 }
