@@ -6394,25 +6394,25 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'سمعني بالاسم', callback_data="/sm3ny"},
+{{text = 'سمعني بالاسم', callback_data="/sm3ny"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
- 
+
  if SourceCh(msg) and text == '/sm3ny' then
 local Teext =[[ 
 اخ ـتار ، الاغاني التي تريدها م الاسفل 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'سمعني تامر حسني'},{{text = 'سمعني عمرو دياب'},
-{{text = 'سمعني محمد فؤاد'},{{text = 'سمعني حماقي'},
-{{text = 'سمعني ابو الانوار'},{{text = 'سمعني ويجز'},
-{{text = 'سمعني رامي صبري'},{{text = 'سمعني محمد منير'},
-{{text = 'سمعني اصاله'},{{text = 'سمعني اليسا'},
-{{text = 'سمعني بابلو'},{{text = 'سمعني عمار حسني'},
-{{text = 'سمعني مسلم'},{{text = 'سمعني عنبه'},
-{{text = 'سمعني مهرجانات'},{{text = 'سمعني كايروكي'},
+{{text = 'سمعني تامر حسني'},{text = 'سمعني عمرو دياب'}},
+{{text = 'سمعني محمد فؤاد'},{text = 'سمعني حماقي'}},
+{{text = 'سمعني ابو الانوار'},{text = 'سمعني ويجز'}},
+{{text = 'سمعني رامي صبري'},{text = 'سمعني محمد منير'}},
+{{text = 'سمعني اصاله'},{text = 'سمعني اليسا'}},
+{{text = 'سمعني بابلو'},{{text = 'سمعني عمار حسني'}},
+{{text = 'سمعني مسلم'},{text = 'سمعني عنبه'}},
+{{text = 'سمعني مهرجانات'},{text = 'سمعني كايروكي'}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
  end
